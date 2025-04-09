@@ -66,3 +66,7 @@ Planned Fix: Investigate token validation, backend authorization logic, and fron
 
 
 Let me know if there’s anything you’d like to add or tweak! 🚀
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
