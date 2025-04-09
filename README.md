@@ -38,9 +38,15 @@ Designed to handle both public and private chats, the app serves static frontend
 2. Backend Setup:
 
 Navigate to the backend directory (/chatapp).
--> Run the following command to start the Spring Boot application:
--> mvn spring-boot:run
-**Ensure MySQL is installed and the application.properties file contains valid database credentials.
+Run the following command to start the Spring Boot application:
+
+```bash
+mvn spring-boot:run
+```
+
+-> Ensure MySQL is installed and the application.properties file contains valid database credentials.
 
 3. Frontend Access:
-Open src/main/resources/static/index.html in your browser.
+
+-> Open src/main/resources/static/index.html in your browser.
+
