@@ -50,3 +50,19 @@ mvn spring-boot:run
 
 -> Open src/main/resources/static/index.html in your browser.
 
+
+⚠️ Known Issues
+Error: 403 Forbidden when loading previous chat histories for specific users.
+
+Impact: Users are unable to view older messages unless part of the active session.
+Planned Fix: Investigate token validation, backend authorization logic, and frontend request alignment.
+
+》》Future Enhancements :
+
+▪︎ Add file-sharing capabilities within chats.
+▪︎ Implement search functionality for messages.
+▪︎ Include user presence indicators (online/offline status).
+▪︎ Resolve chat history retrieval error (403 Forbidden).
+
+
+Let me know if there’s anything you’d like to add or tweak! 🚀
