@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="dashboard-container">
+    <!-- Left Sidebar - Users/Groups -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Chats</h2>
+            <button id="newChatBtn"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="search-box">
+            <label>
+                <input type="text" placeholder="Search...">
+            </label>
+            <i class="fas fa-search"></i>
+        </div>
+        <ul id="userList"></ul>
+    </div>
+
+    <!-- Middle - Chat Area -->
+    <div class="main-chat">
+        <div class="chat-header">
+            <div class="chat-info">
+                <h3 id="chatWith">Select a chat</h3>
+                <p id="typingIndicator" class="typing-indicator hidden"><em>typing...</em></p>
+            </div>
+            <div class="chat-actions">
+                <button><i class="fas fa-phone"></i></button>
+                <button><i class="fas fa-video"></i></button>
+                <button><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <div class="welcome-message">
+                <h3>Welcome to ChatApp!</h3>
+                <p>Select a user to start chatting</p>
+            </div>
+        </div>
+
+        <form id="messageForm" class="message-form">
+            <div class="input-wrapper">
+                <button type="button" id="emojiBtn"><i class="far fa-smile"></i></button>
+                <label for="messageInput"></label><input type="text" id="messageInput" placeholder="Type a message..." required>
+                <button type="button" id="attachBtn"><i class="fas fa-paperclip"></i></button>
+            </div>
+            <button type="submit" id="sendBtn" disabled>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-- Right Sidebar - User Profile -->
+    <div class="profile-sidebar">
+        <div class="profile-header">
+            <button id="closeProfileBtn"><i class="fas fa-times"></i></button>
+            <h3>Profile</h3>
+        </div>
+        <div class="profile-content">
+            <div class="avatar">
+                <img src="https://ui-avatars.com/api/?name=User" alt="Profile">
+            </div>
+            <h4 id="profileUsername">Username</h4>
+            <div class="profile-details">
+                <p><i class="fas fa-circle status online"></i> Online</p>
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
