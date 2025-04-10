@@ -1,7 +1,7 @@
 # Chat-App
 
 ## Overview
-Chat-App is a real-time messaging application built using Spring Boot and WebSocket. 
+This Chat-App is a real-time messaging application built using Spring Boot and WebSocket. 
 The project provides secure and private messaging features with user authentication powered by JWT. 
 Designed to handle both public and private chats, the app serves static frontend assets alongside backend APIs.
 
