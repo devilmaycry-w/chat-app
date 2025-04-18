@@ -59,10 +59,10 @@ Planned Fix: Investigate token validation, backend authorization logic, and fron
 
 》》Future Enhancements :
 
-▪︎ Add file-sharing capabilities within chats.
-▪︎ Implement search functionality for messages.
-▪︎ Include user presence indicators (online/offline status).
-▪︎ Resolve chat history retrieval error (403 Forbidden).
+•Add file-sharing capabilities within chats.
+•Implement search functionality for messages.
+•Include user presence indicators (online/offline status).
+•Resolve chat history retrieval error (403 Forbidden).
 
 
 Let me know if there’s anything you’d like to add or tweak! 🚀
